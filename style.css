@@ -1,0 +1,431 @@
+/* Box Sizing - border-box /Margin/Padding = 0 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(./assets/font/OpenSans-Regular.ttf);
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 67.5%;
+    font-family: OpenSans;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+/* Header */
+
+header {
+    min-height: 100vh;
+    background-image: url(./assets/images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    right: 3vw;
+}
+
+nav p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 3.25rem;
+    font-weight: 400;
+    letter-spacing: 0.195rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: white;
+    border-top: 2px white double;
+    border-bottom: 2px white double;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.heading p {
+    color: white;
+    font-size: 17.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.6px; /* 165% */
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 40vw;
+    opacity: 0.8;
+    margin-bottom: 2vw;
+}
+
+.heading a {
+    border-radius: 3px;
+    background: #ed4933;
+    color: #fff;
+    text-align: center;
+    padding: 12px 37.92px 12.33px 38.13px;
+    border-radius: 3px;
+}
+
+/* Section Tolkien */
+
+.tolkien {
+    background: #21b2a6;
+    min-height: 580.58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .iconContainer {
+    display: flex;
+}
+
+.iconOne {
+    border: 2px solid rgba(0, 0, 0, 0.13);
+} */
+
+.tolkien p:first-of-type {
+    font-size: 23.4px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40.95px; /* 175% */
+    letter-spacing: 5.265px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 14rem;
+    padding-bottom: 3rem;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.13);
+    width: 985.83px;
+    margin-bottom: 4vw;
+}
+
+.tolkien p:last-of-type {
+    color: #c8ece9;
+
+    text-align: center;
+
+    font-size: 17.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.6px; /* 165% */
+    letter-spacing: 1.3px;
+    padding: 0 6vw;
+    width: 1033.12px;
+    margin-bottom: 4vw;
+}
+
+.tolkien div {
+    display: flex;
+    width: 1040px;
+    height: 106.84px;
+    padding: 2.374px 330.298px 2.374px 330.3px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36.568px;
+    flex-shrink: 0;
+}
+
+.tolkien img {
+    margin-bottom: 4vw;
+}
+
+/* Section Cities*/
+
+.colombia img,
+.paris img,
+.hungary img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.colombia {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #2b343d;
+    color: #fff;
+    gap: 1vw;
+}
+
+.paris {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: #273038;
+    color: #fff;
+}
+
+.hungary {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #242b33;
+    color: #fff;
+}
+
+.paris h3,
+.colombia h3,
+.hungary h3 {
+    font-size: 23.4px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40.95px; /* 175% */
+    letter-spacing: 5.265px;
+    text-transform: uppercase;
+    padding-left: 2vw;
+}
+
+.paris p,
+.hungary p,
+.colombia p {
+    font-size: 17.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.6px; /* 165% */
+    letter-spacing: 1.3px;
+    padding: 2vw;
+    width: 90%;
+}
+
+.text {
+    padding: 2vw;
+}
+
+/* Section Promise */
+
+.promiseInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #505393;
+    color: #fff;
+    padding: 104px 200px 103.98px 200px;
+}
+
+.promiseItem:first-of-type {
+    grid-column: 1/-1;
+}
+
+.promiseItem:first-of-type h3 {
+    font-size: 23.4px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40.95px; /* 175% */
+    letter-spacing: 5.265px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+    width: fit-content;
+    margin-bottom: 2vw;
+    padding-bottom: 1vw;
+    margin: auto;
+}
+
+.promiseItem:first-of-type p {
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 17.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.6px; /* 165% */
+    letter-spacing: 1.3px;
+}
+
+.promiseItem {
+    padding: 69.32px 69.33px 97.9px 104px;
+}
+
+.underline {
+}
+
+.promiseItem h3 {
+    font-size: 19.933px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 34.883px; /* 175% */
+    letter-spacing: 4.485px;
+    text-transform: uppercase;
+    margin-bottom: 1vw;
+}
+
+.promiseItem p {
+    color: #d3d4e4;
+    font-family: Open Sans;
+    font-size: 17.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.6px; /* 165% */
+    letter-spacing: 1.3px;
+}
+
+.promiseItem:nth-of-type(2) {
+    background-color: rgba(0, 0, 0, 0.035);
+    row-gap: 1vw;
+}
+
+.promiseItem:nth-of-type(3) {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.promiseItem:nth-of-type(4) {
+    background-color: rgba(0, 0, 0, 0.106);
+}
+
+.promiseItem:nth-of-type(5) {
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.promiseItem:nth-of-type(6) {
+    background-color: rgba(0, 0, 0, 0.176);
+}
+
+.promiseItem:nth-of-type(7) {
+    background-color: rgba(0, 0, 0, 0.21);
+}
+
+/* .promiseItem:hover,
+.promiseItem p:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: white;
+    color: #4f3188;
+} */
+
+/* Section Contact */
+
+.contact {
+    background-image: url(./assets/images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 443.88px;
+}
+.contactInner {
+    display: flex;
+
+    width: 130rem;
+    padding: 6.5rem 20.625rem 4.33313rem 20.625rem;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.contactLeft h3 {
+    color: #fff;
+
+    font-size: 23.4px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40.95px; /* 175% */
+    letter-spacing: 5.265px;
+    text-transform: uppercase;
+}
+
+.contactLeft p {
+    color: #fff;
+
+    font-family: Open Sans;
+    font-size: 17.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.6px; /* 165% */
+    letter-spacing: 1.3px;
+}
+
+.contactRight {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contactRight a {
+    color: #fff;
+    text-align: center;
+    font-size: 13.867px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43.333px; /* 312.499% */
+    letter-spacing: 3.12px;
+    text-transform: uppercase;
+    background-color: #ed4933;
+    width: 150px;
+}
+
+/* Footer */
+
+footer {
+    padding: 0 100px;
+    background-color: #1d242ae5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin-left: 1vw;
+    opacity: 0.5;
+}
+
+footer img:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 0.86669rem;
+    line-height: 0.86669rem; /* 100% */
+    letter-spacing: 0.195rem;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .paris,
+    .colombia,
+    .hungary {
+        grid-template-columns: 1fr;
+    }
+    .paris p,
+    .hungary p,
+    .colombia p {
+        text-align: center;
+    }
+}
