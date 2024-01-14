@@ -23,12 +23,6 @@ a {
     text-decoration: none;
 }
 
-/* .wrapper {
-    max-width: 1440px;
-    margin: auto;
-} */
-/* Header */
-
 header {
     min-height: 100vh;
     background-image: url(./assets/images/hero.jpg);
